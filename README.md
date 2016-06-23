@@ -7,7 +7,7 @@ export FLASKY_ADMIN='email_address'
 ##第九章，99页有个role_id要自己手动加
 
 ##部署到heroku上的坑
-###一开始create的时候，输上的命令不管用了
+###一开始create的时候，书上的命令不管用了
 heroku create appname --buildpack heroku/python
 ### 配置数据库：
 书上的命令不适用了，应该是Heroku升级了。
