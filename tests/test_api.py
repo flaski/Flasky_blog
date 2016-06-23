@@ -252,15 +252,7 @@ class APITestCase(unittest.TestCase):
             headers=self.get_api_headers('susan@example.com', 'dog'))
         self.assertTrue(response.status_code == 200)
         json_response = json.loads(response.data.decode('utf-8'))
-<<<<<<< HEAD
-<<<<<<< HEAD
-        self.assertIsNotNone(json_response.get('posts'))
-=======
         self.assertIsNotNone(json_response.get('comments'))
->>>>>>> origin/master
-=======
-        self.assertIsNotNone(json_response.get('comments'))
->>>>>>> origin/master
         self.assertTrue(json_response.get('count', 0) == 2)
 
         # get all the comments
@@ -269,13 +261,5 @@ class APITestCase(unittest.TestCase):
             headers=self.get_api_headers('susan@example.com', 'dog'))
         self.assertTrue(response.status_code == 200)
         json_response = json.loads(response.data.decode('utf-8'))
-<<<<<<< HEAD
-<<<<<<< HEAD
-        self.assertIsNotNone(json_response.get('posts'))
-=======
         self.assertIsNotNone(json_response.get('comments'))
->>>>>>> origin/master
-=======
-        self.assertIsNotNone(json_response.get('comments'))
->>>>>>> origin/master
         self.assertTrue(json_response.get('count', 0) == 2)

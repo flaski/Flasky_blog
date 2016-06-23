@@ -187,11 +187,6 @@ class UserModelTestCase(unittest.TestCase):
         db.session.delete(u2)
         db.session.commit()
         self.assertTrue(Follow.query.count() == 1)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/master
 
     def test_to_json(self):
         u = User(email='john@example.com', password='cat')
@@ -202,7 +197,3 @@ class UserModelTestCase(unittest.TestCase):
                          'posts', 'followed_posts', 'post_count']
         self.assertEqual(sorted(json_user.keys()), sorted(expected_keys))
         self.assertTrue('api/v1.0/users/' in json_user['url'])
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master

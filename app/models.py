@@ -241,15 +241,7 @@ class User(UserMixin, db.Model):
 
     def to_json(self):
         json_user = {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'url': url_for('api.get_post', id=self.id, _external=True),
-=======
             'url': url_for('api.get_user', id=self.id, _external=True),
->>>>>>> origin/master
-=======
-            'url': url_for('api.get_user', id=self.id, _external=True),
->>>>>>> origin/master
             'username': self.username,
             'member_since': self.member_since,
             'last_seen': self.last_seen,
