@@ -14,7 +14,8 @@ heroku create appname --buildpack heroku/python
 创建数据库
 
 heroku addons:create heroku-postgresql:hobby-dev
-
+###头像gravatar替换成
+cn.gravatar.com/avatar，在app/models.py
 
 ##参考资料
 http://cocode.cc/t/flask-heroku/4253
